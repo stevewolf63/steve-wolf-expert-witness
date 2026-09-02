@@ -1,365 +1,329 @@
 [
   {
-    "num": 1,
     "role": "defense",
-    "sideLabel": "Defense",
     "types": [
       "firearms",
       "other"
     ],
     "injury": "Murder Trial",
-    "matter": "State of Tennessee v. Michael Mullins \u2014 Fuel & Fire \u00b7 Memphis, TN",
+    "matter": "State of Tennessee v. Michael Mullins — Fuel & Fire · Memphis, TN",
     "featured": false
   },
   {
-    "num": 2,
     "role": "defense",
-    "sideLabel": "Defense",
     "types": [
       "firearms"
     ],
     "injury": "Mass Shooting & Bombing",
-    "matter": "Doe v. U.S. Government \u2014 Firearms reaction time \u00b7 Oklahoma City, OK",
+    "matter": "Doe v. U.S. Government — Firearms reaction time · Oklahoma City, OK",
     "featured": false
   },
   {
-    "num": 3,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "other"
     ],
     "injury": "Electrical Injury",
-    "matter": "Higgs v. TSE \u2014 High tension systems \u00b7 Memphis, TN",
+    "matter": "Higgs v. TSE — High tension systems · Memphis, TN",
     "featured": false
   },
   {
-    "num": 4,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "climbing"
     ],
     "injury": "Cervical Injury",
-    "matter": "Atain v. NNG \u2014 Ropes course / zip line \u00b7 New York City, NY",
+    "matter": "Atain v. NNG — Ropes course / zip line · New York City, NY",
     "featured": false
   },
   {
-    "num": 5,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "rigging",
       "on-set"
     ],
     "injury": "Spinal Injury",
-    "matter": "Richards v. Spider-Man on Broadway \u2014 Rigging / computerized flight control \u00b7 NYC",
+    "matter": "Richards v. Spider-Man on Broadway — Rigging / computerized flight control · NYC",
     "featured": false
   },
   {
-    "num": 6,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "climbing",
       "rigging"
     ],
     "injury": "Cervical Injury",
-    "matter": "Bazylewicz v. Church Mutual \u2014 Ropes course rigging \u00b7 Cleveland, OH",
+    "matter": "Bazylewicz v. Church Mutual — Ropes course rigging · Cleveland, OH",
     "featured": false
   },
   {
-    "num": 7,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "rigging"
     ],
     "injury": "Spinal Injury",
-    "matter": "Lubitsch v. Adirondack Scenic, Six Flags \u2014 Theatrical rigging \u00b7 NYC",
+    "matter": "Lubitsch v. Adirondack Scenic, Six Flags — Theatrical rigging · NYC",
     "featured": false
   },
   {
-    "num": 8,
     "role": "defense",
-    "sideLabel": "Defense",
     "types": [
       "climbing"
     ],
     "injury": "Brain Injury",
-    "matter": "Danny Bell v. Sumo USA \u2014 Recreational climbing \u00b7 Dallas, TX",
+    "matter": "Danny Bell v. Sumo USA — Recreational climbing · Dallas, TX",
     "featured": false
   },
   {
-    "num": 9,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "climbing"
     ],
     "injury": "Spinal Injury",
-    "matter": "Deanna Theis v. Climb Max \u2014 Recreational climbing \u00b7 New Orleans, LA",
+    "matter": "Deanna Theis v. Climb Max — Recreational climbing · New Orleans, LA",
     "featured": false
   },
   {
-    "num": 10,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "climbing"
     ],
     "injury": "Fatality",
-    "matter": "De Rita v. C.A.I.U \u2014 Ropes course / climbing \u00b7 Harrisburg, PA",
+    "matter": "De Rita v. C.A.I.U — Ropes course / climbing · Harrisburg, PA",
     "featured": false
   },
   {
-    "num": 11,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "climbing"
     ],
     "injury": "Fatality",
-    "matter": "Ro v. San Juan Mountain Guides, Jeff Lowe \u2014 Ice climbing \u00b7 Ouray, CO",
+    "matter": "Ro v. San Juan Mountain Guides, Jeff Lowe — Ice climbing · Ouray, CO",
     "featured": false
   },
   {
-    "num": 12,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "climbing"
     ],
     "injury": "Fatality",
-    "matter": "Sarrette v. Just For Fun Rentals \u2014 Recreational climbing \u00b7 Boston, MA",
+    "matter": "Sarrette v. Just For Fun Rentals — Recreational climbing · Boston, MA",
     "featured": false
   },
   {
-    "num": 13,
     "role": "defense",
-    "sideLabel": "Defense",
     "types": [
       "rigging",
       "on-set"
     ],
     "injury": "Multiple Fractures",
-    "matter": "Bailey v. Showman Fabricators & Disney \u2014 Theatrical rigging \u00b7 NYC",
+    "matter": "Bailey v. Showman Fabricators & Disney — Theatrical rigging · NYC",
     "featured": false
   },
   {
-    "num": 14,
     "role": "defense",
-    "sideLabel": "Defense",
     "types": [
       "rigging"
     ],
     "injury": "Multiple Injuries",
-    "matter": "Rorick v. In Events \u2014 Outdoor rigging \u00b7 Honolulu, HI",
+    "matter": "Rorick v. In Events — Outdoor rigging · Honolulu, HI",
     "featured": false
   },
   {
-    "num": 15,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "climbing"
     ],
     "injury": "Brain Injury",
-    "matter": "Veysey v. Rock On Adventure \u2014 Indoor climbing / challenge course \u00b7 Boston, MA",
+    "matter": "Veysey v. Rock On Adventure — Indoor climbing / challenge course · Boston, MA",
     "featured": false
   },
   {
-    "num": 16,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "climbing"
     ],
     "injury": "Fracture",
-    "matter": "Chen v. Dumbo Bolder \u2014 Indoor climbing \u00b7 NYC",
+    "matter": "Chen v. Dumbo Bolder — Indoor climbing · NYC",
     "featured": false
   },
   {
-    "num": 17,
     "role": "defense",
-    "sideLabel": "Defense",
     "types": [
       "firearms",
       "explosives"
     ],
     "injury": "Fatality & Serious Injury",
-    "matter": "Doe v. USGS Federal Court \u2014 Explosives and firearms \u00b7 Lawrence, KS",
+    "matter": "Doe v. USGS Federal Court — Explosives and firearms · Lawrence, KS",
     "featured": false
   },
   {
-    "num": 18,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "firearms",
       "explosives",
       "on-set"
     ],
     "injury": "Head Injury",
-    "matter": "Botuchis v. LD Filmworks \u2014 Explosives and firearms",
+    "matter": "Botuchis v. LD Filmworks — Explosives and firearms",
     "featured": false
   },
   {
-    "num": 19,
     "role": "defense",
-    "sideLabel": "Defense",
     "types": [
       "other"
     ],
     "injury": "Drowning",
-    "matter": "State v. Terry Smith \u2014 Tidal movement \u00b7 Texas City, TX",
+    "matter": "State v. Terry Smith — Tidal movement · Texas City, TX",
     "featured": false
   },
   {
-    "num": 20,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "paintball"
     ],
     "injury": "Loss of Eye",
-    "matter": "Ernst v. Church \u2014 Paintball \u00b7 Sacramento, CA",
+    "matter": "Ernst v. Church — Paintball · Sacramento, CA",
     "featured": false
   },
   {
-    "num": 21,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "firearms",
       "on-set"
     ],
     "injury": "Shotgun Injuries",
-    "matter": "Peters v. City of Wichita \u2014 Theatrical use of firearms \u00b7 Wichita, KS",
+    "matter": "Peters v. City of Wichita — Theatrical use of firearms · Wichita, KS",
     "featured": false
   },
   {
-    "num": 22,
     "role": "defense",
-    "sideLabel": "Defense",
     "types": [
       "other"
     ],
     "injury": "Fracture",
-    "matter": "Lecher v. School District of La Crosse \u2014 Outdoor rec supervision \u00b7 La Crosse, WI",
+    "matter": "Lecher v. School District of La Crosse — Outdoor rec supervision · La Crosse, WI",
     "featured": false
   },
   {
-    "num": 23,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "paintball"
     ],
     "injury": "Loss of Eye",
-    "matter": "DeMayo v. Xtreme Paintball \u00b7 Salt Lake City, UT",
+    "matter": "DeMayo v. Xtreme Paintball · Salt Lake City, UT",
     "featured": false
   },
   {
-    "num": 24,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "on-set"
     ],
     "injury": "Rollover Accident",
-    "matter": "Razo v. No Exit Films \u2014 $66.5M On-Set Rollover, largest award in NM history \u00b7 Santa Fe, NM",
+    "matter": "Razo v. No Exit Films — $66.5M On-Set Rollover, largest award in NM history · Santa Fe, NM",
     "featured": true
   },
   {
-    "num": 25,
     "role": "prosecution",
-    "sideLabel": "Prosecution",
     "types": [
       "firearms",
       "on-set"
     ],
     "injury": "Fatal Shooting",
-    "matter": "State of New Mexico v. Alec Baldwin \u00b7 Santa Fe, NM",
+    "matter": "State of New Mexico v. Alec Baldwin · Santa Fe, NM",
     "featured": true
   },
   {
-    "num": 26,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "firearms",
       "on-set"
     ],
     "injury": "Fatal Shooting",
-    "matter": "Hutchins v. Alec Baldwin \u00b7 Los Angeles, CA",
+    "matter": "Hutchins v. Alec Baldwin · Los Angeles, CA",
     "featured": true
   },
   {
-    "num": 27,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "firearms",
       "on-set"
     ],
     "injury": "Fatal Shooting",
-    "matter": "Mamie Mitchell v. Alec Baldwin \u00b7 Santa Fe, NM",
+    "matter": "Mamie Mitchell v. Alec Baldwin · Santa Fe, NM",
     "featured": true
   },
   {
-    "num": 28,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "on-set"
     ],
     "injury": "Head Injury",
-    "matter": "Vicens v. Glover aka Steve-O, Mudflap Productions \u2014 Stunt safety \u00b7 Puerto Rico",
+    "matter": "Vicens v. Glover aka Steve-O, Mudflap Productions — Stunt safety · Puerto Rico",
     "featured": false
   },
   {
-    "num": 29,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "wildfire"
     ],
     "injury": "Wildfire Damage",
-    "matter": "Kingstone v. Doe \u2014 Real estate value lost to wildfire \u00b7 Boulder, CO",
+    "matter": "Kingstone v. Doe — Real estate value lost to wildfire · Boulder, CO",
     "featured": false
   },
   {
-    "num": 30,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "paintball"
     ],
     "injury": "Loss of Eye",
-    "matter": "Tiffany M. Worth v. Academy Sports \u2014 Paintball \u00b7 MS",
+    "matter": "Tiffany M. Worth v. Academy Sports — Paintball · MS",
     "featured": false
   },
   {
-    "num": 31,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "explosives"
     ],
     "injury": "Serious Bodily Injury",
-    "matter": "William Spotts v. 1776 Fest \u2014 Explosion \u00b7 Oklahoma City, OK",
+    "matter": "William Spotts v. 1776 Fest — Explosion · Oklahoma City, OK",
     "featured": false
   },
   {
-    "num": 32,
     "role": "plaintiff",
-    "sideLabel": "Plaintiff",
     "types": [
       "climbing"
     ],
     "injury": "Serious Leg Injury",
-    "matter": "Monroe v. Camelback \u2014 Zip line",
+    "matter": "Monroe v. Camelback — Zip line",
+    "featured": false
+  },
+  {
+    "role": "plaintiff",
+    "types": [
+      "on-set"
+    ],
+    "injury": "Serious Injury",
+    "matter": "Johnson v. Rally Studios - Motorcycle Stunt .  Seatttle, WA",
+    "featured": false
+  },
+  {
+    "role": "plaintiff",
+    "types": [
+      "firearms",
+      "on-set"
+    ],
+    "injury": "Fatal Shooting",
+    "matter": "Svetnoy v. Baldwin - On set homicide -Alec Balway . Los Angeles, CA",
+    "featured": false
+  },
+  {
+    "role": "plaintiff",
+    "types": [
+      "climbing"
+    ],
+    "injury": "Serious Injury",
+    "matter": "Bickette v. Ape Index Climbing Gym  .  Pheonix, AZ",
     "featured": false
   }
 ]
