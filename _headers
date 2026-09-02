@@ -1,0 +1,6 @@
+# Allow the dashboard (and any other origin) to fetch cases.json for editing.
+# Netlify reads this file at build time and applies the headers to the deploy.
+/cases.json
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+  Cache-Control: public, max-age=60, must-revalidate
