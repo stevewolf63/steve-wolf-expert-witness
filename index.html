@@ -2474,16 +2474,37 @@ function downloadPress(){
 })();
 </script>
 <script>
-/* ===== CASE TABLE: DATA LOADER (dashboard-published) ===== */
+/* ===== CASE TABLE: DATA LOADER v83 (shared multi-specialty feed) ===== */
 /* Fetches /cases.json (built and uploaded by the sw-expert-dashboard when Steve
    publishes a case update) and populates #caseTableBody before the search/
    filter/sort IIFE runs. The filter IIFE reads the DOM once at startup, so
    this must complete before it. We block the IIFE using a Promise gate. */
 window.__swewCasesReady = new Promise(function(resolve){
-  function esc(s){ return String(s == null ? '' : s).replace(/[&<>]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]; }); }
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
   function roleClass(r){ return r === 'defense' ? 'role-d' : (r === 'prosecution' ? 'role-pr' : 'role-p'); }
   function roleLabel(r){ return r === 'defense' ? 'Defense' : (r === 'prosecution' ? 'Prosecution' : 'Plaintiff'); }
+  var legacyPlacements = {
+    "Higgs v. TSE · High tension systems · Memphis, TN": ["electrocution"],
+    "Lubitsch v. Adirondack Scenic, Six Flags · Theatrical rigging · NYC": ["climbing"],
+    "Rorick v. In Events · Outdoor rigging · Honolulu, HI": ["climbing"],
+    "Doe v. USGS Federal Court · Explosives and firearms · Lawrence, KS": ["on-set"],
+    "State v. Terry Smith · Tidal movement · Texas City, TX": ["aquatic"],
+    "William Spotts v. 1776 Fest · Explosion · Oklahoma City, OK": ["on-set"]
+  };
+  var specialtyTypes = {
+    "firearms-expert-witness": ["firearms"],
+    "climbing-gym-expert-witness": ["climbing"],
+    "pyrotechnics-expert-witness": ["explosives"],
+    "stunt-expert-witness": ["on-set", "rigging"],
+    "wildfire-expert-witness": ["wildfire"],
+    "electrocution-expert-witness": ["electrocution"],
+    "paintball-airsoft-expert-witness": ["paintball"],
+    "aquatics-drowning-expert-witness": ["aquatic"]
+  };
   function render(cases){
+    cases = cases.map(function(c){
+      return Object.assign({}, c, {types:Array.from(new Set((c.types || []).concat(c.categoryVersion === 2 ? [] : legacyPlacements[c.matter] || [])))});
+    });
     var body = document.getElementById('caseTableBody');
     if (!body) return resolve();
     /* Preserve sort/filter integrity: renumber sequentially from 1 in the
@@ -2491,7 +2512,7 @@ window.__swewCasesReady = new Promise(function(resolve){
     var rows = cases.map(function(c, i){
       var num = i + 1;
       var typesAttr = (c.types || []).join(' ');
-      var matter = c.matter || '';
+      var matter = esc(c.matter || '');
       /* A featured flag renders the case name in italics, matching the
          original hand-crafted markup for the marquee matters. */
       if (c.featured) matter = '<em>' + matter + '</em>';
@@ -2503,6 +2524,26 @@ window.__swewCasesReady = new Promise(function(resolve){
         + '</tr>';
     });
     body.innerHTML = rows.join('');
+    /* One authoritative record can appear in several independent sections.
+       A case matching two tags in one section still appears there only once. */
+    Object.keys(specialtyTypes).forEach(function(id){
+      var tbody = document.querySelector('#' + id + ' .specialty-cases tbody');
+      if (!tbody) return;
+      var matched = [];
+      cases.forEach(function(c, i){
+        if (c.types.some(function(t){return specialtyTypes[id].indexOf(t) !== -1;})) matched.push(rows[i]);
+      });
+      tbody.innerHTML = matched.length ? matched.join('') : '<tr><td colspan="4">No public cases currently listed in this specialty.</td></tr>';
+    });
+    /* New explicit categories for specialties that previously used "other". */
+    var tags = document.querySelector('.ct-tag[data-type="other"]');
+    if (tags) [["electrocution","Electrocution"],["aquatic","Aquatics"]].forEach(function(pair){
+      if (document.querySelector('.ct-tag[data-type="' + pair[0] + '"]')) return;
+      var button = tags.cloneNode(true);
+      button.classList.remove('active'); button.setAttribute('aria-pressed','false');
+      button.dataset.type = pair[0]; button.textContent = pair[1];
+      tags.parentNode.insertBefore(button, tags);
+    });
     /* Update the "All N" filter button label so the count matches. */
     var allBtn = document.querySelector('.ct-btn[data-filter="all"]');
     if (allBtn) allBtn.textContent = 'All ' + cases.length;
