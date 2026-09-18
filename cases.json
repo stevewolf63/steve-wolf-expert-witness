@@ -326,4 +326,21 @@
     "matter": "Bickette v. Ape Index Climbing Gym · Phoenix, AZ",
     "featured": false
   }
+,
+  {
+    "matter": "Fjugstad fireworks injury matter · Colorado",
+    "injury": "Fireworks-related burn injuries",
+    "role": "plaintiff",
+    "types": ["explosives"],
+    "featured": false,
+    "categoryVersion": 2
+  },
+  {
+    "matter": "Ratto v. City of Boise, Sirjag Pyro, et al. · Boise, ID",
+    "injury": "Fireworks-related injury",
+    "role": "plaintiff",
+    "types": ["explosives"],
+    "featured": false,
+    "categoryVersion": 2
+  }
 ]
