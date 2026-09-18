@@ -4,3 +4,7 @@
   Access-Control-Allow-Origin: *
   Access-Control-Allow-Methods: GET, HEAD, OPTIONS
   Cache-Control: public, max-age=60, must-revalidate
+
+/cv/*.pdf
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=0, must-revalidate
