@@ -342,5 +342,21 @@
     "types": ["explosives"],
     "featured": false,
     "categoryVersion": 2
+  },
+  {
+    "matter": "Hong v. Hipcamp · Zipline injury · San Francisco, CA",
+    "injury": "Broken Back",
+    "role": "plaintiff",
+    "types": ["climbing", "rigging"],
+    "featured": false,
+    "categoryVersion": 2
+  },
+  {
+    "matter": "BNB Wholesale v. Orkid Plaza · Fire investigation · Los Angeles, CA",
+    "injury": "Property Damage",
+    "role": "plaintiff",
+    "types": ["explosives"],
+    "featured": false,
+    "categoryVersion": 2
   }
 ]
