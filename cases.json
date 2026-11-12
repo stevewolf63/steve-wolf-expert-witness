@@ -220,7 +220,7 @@
       "on-set"
     ],
     "injury": "Rollover Accident",
-    "matter": "Razo v. No Exit Films · $66.5M On-Set Rollover, largest award in NM history · Santa Fe, NM",
+    "matter": "Razo v. No Exit Films · $66.5M On-Set Rollover, one of NM’s largest awards · Santa Fe, NM",
     "featured": true
   },
   {
@@ -325,13 +325,14 @@
     "injury": "Serious Injury",
     "matter": "Bickette v. Ape Index Climbing Gym · Phoenix, AZ",
     "featured": false
-  }
-,
+  },
   {
     "matter": "Fjugstad fireworks injury matter · Colorado",
     "injury": "Fireworks-related burn injuries",
     "role": "plaintiff",
-    "types": ["explosives"],
+    "types": [
+      "explosives"
+    ],
     "featured": false,
     "categoryVersion": 2
   },
@@ -339,7 +340,9 @@
     "matter": "Ratto v. City of Boise, Sirjag Pyro, et al. · Boise, ID",
     "injury": "Fireworks-related injury",
     "role": "plaintiff",
-    "types": ["explosives"],
+    "types": [
+      "explosives"
+    ],
     "featured": false,
     "categoryVersion": 2
   },
@@ -347,7 +350,10 @@
     "matter": "Hong v. Hipcamp · Zipline injury · San Francisco, CA",
     "injury": "Broken Back",
     "role": "plaintiff",
-    "types": ["climbing", "rigging"],
+    "types": [
+      "climbing",
+      "rigging"
+    ],
     "featured": false,
     "categoryVersion": 2
   },
@@ -355,7 +361,9 @@
     "matter": "BNB Wholesale v. Orkid Plaza · Fire investigation · Los Angeles, CA",
     "injury": "Property Damage",
     "role": "plaintiff",
-    "types": ["explosives"],
+    "types": [
+      "explosives"
+    ],
     "featured": false,
     "categoryVersion": 2
   }
