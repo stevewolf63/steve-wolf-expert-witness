@@ -1976,6 +1976,7 @@ img,video,iframe,table{max-width:100%}
 <select id="cvCaseType" name="casetype">
 <option data-rate="premium" value="Wildfire / fire origin, cause and loss">Wildfire &mdash; origin, cause and loss</option>
 <option data-rate="premium" value="Explosion or blast injury">Explosion or blast injury</option>
+<option data-rate="standard" data-cv="useofforce" value="Police shootings and use of force">Police shootings and use of force</option>
 <option data-rate="standard" value="Firearms">Firearms</option>
 <option data-rate="standard" value="Pyrotechnics and special effects">Pyrotechnics and special effects</option>
 <option data-rate="standard" value="Stunts and film production">Stunts and film production</option>
@@ -2364,6 +2365,10 @@ var CV_VARIANTS = {
     path: '/cv/Steve_Wolf_Expert_Witness_CV_and_Fee_Schedule.pdf',
     file: 'Steve_Wolf_Expert_Witness_CV_and_Fee_Schedule.pdf'
   },
+  useofforce: {
+    path: '/cv/Steve_Wolf_Expert_Witness_CV_Use_of_Force.pdf',
+    file: 'Steve_Wolf_Expert_Witness_CV_Use_of_Force.pdf'
+  },
   premium: {
     path: '/cv/Steve_Wolf_Expert_Witness_CV_Wildfire_and_Explosives.pdf',
     file: 'Steve_Wolf_Expert_Witness_CV_Wildfire_and_Explosives_Fee_Schedule.pdf'
@@ -2377,17 +2382,21 @@ function cvSaveBlob(blob, filename){
   setTimeout(function(){ URL.revokeObjectURL(url); a.remove(); }, 1500);
 }
 function cvBlobFromBase64(tier){
+  /* The use-of-force edition has no embedded copy; if its file cannot be
+     fetched, the standard CV (same fee schedule) is the fallback. */
   var bin = atob(tier === 'premium' ? CV_PREMIUM_B64 : CV_B64), len = bin.length, bytes = new Uint8Array(len);
   for (var i=0;i<len;i++){ bytes[i] = bin.charCodeAt(i); }
   return new Blob([bytes], {type:'application/pdf'});
 }
 function cvRateTierFor(kind){
   if (kind === 'premium' || kind === 'wildfire' || kind === 'explosion') return 'premium';
+  if (kind === 'useofforce') return 'useofforce';
   if (kind === 'standard') return 'standard';
   var sel = document.getElementById('cvCaseType');
   if (sel && sel.options[sel.selectedIndex]){
     var t = sel.options[sel.selectedIndex].getAttribute('data-rate');
     if (t === 'premium') return 'premium';
+    if (sel.options[sel.selectedIndex].getAttribute('data-cv') === 'useofforce') return 'useofforce';
   }
   return 'standard';
 }
@@ -2396,7 +2405,7 @@ function downloadCV(kind){
   var v = CV_VARIANTS[tier];
   function fallback(err){
     if (err) console.warn('CV file fetch failed, using embedded copy', err);
-    try { cvSaveBlob(cvBlobFromBase64(tier), v.file); }
+    try { cvSaveBlob(cvBlobFromBase64(tier), (tier === 'useofforce' ? CV_VARIANTS.standard : v).file); }
     catch(e){ console.error('CV download failed', e); }
   }
   if (!window.fetch){ fallback(); return; }
@@ -2457,11 +2466,12 @@ function downloadPress(){
         return;
       }
       var srcField = form.querySelector('input[name=source]');
-      var caseType = '', rateTier = '';
+      var caseType = '', rateTier = '', cvKind = '';
       if (caseSel){
         caseType = caseSel.value || '';
         var selOpt = caseSel.options[caseSel.selectedIndex];
         rateTier = (selOpt && selOpt.getAttribute('data-rate') === 'premium') ? 'premium' : 'standard';
+        cvKind = (selOpt && selOpt.getAttribute('data-cv') === 'useofforce') ? 'useofforce' : '';
       }
       if (srcField) srcField.value = source + (caseType ? ' \u00b7 ' + caseType + ' \u00b7 ' + rateTier + ' rate sheet' : '') + ' \u00b7 ' + (location.href || '');
       var idField = form.querySelector('input[name=intakeId]');
@@ -2483,17 +2493,17 @@ function downloadPress(){
       function finish(ok){
         if (done) return; done = true; sending = false;
         if (ok){
-          if (doDownload){ runDownload(rateTier); }
+          if (doDownload){ runDownload(cvKind || rateTier); }
           form.style.display = 'none';
           if (msg){
-            var againCall = (dlKind === 'press') ? 'downloadPress()' : "downloadCV('" + (rateTier || 'standard') + "')";
+            var againCall = (dlKind === 'press') ? 'downloadPress()' : "downloadCV('" + (cvKind || rateTier || 'standard') + "')";
             msg.innerHTML = successText + (doDownload ? ' <a href="#" onclick="' + againCall + ';return false;">Download again.</a>' : '');
             msg.style.display = 'block';
           }
           return;
         }
         if (btn){ btn.disabled = false; btn.textContent = btnLabel; }
-        if (doDownload){ runDownload(rateTier); }
+        if (doDownload){ runDownload(cvKind || rateTier); }
         var lines = [];
         ['name','email','phone','casetype','jurisdiction','timeline','details'].forEach(function(k){ if (data[k]) lines.push(k.charAt(0).toUpperCase() + k.slice(1) + ': ' + data[k]); });
         var mailto = 'mailto:' + OWNER_EMAIL + '?subject=' + encodeURIComponent((source === 'case-intake' ? 'New case for Steve Wolf' : 'Website request') + (caseType ? ': ' + caseType : '')) + '&body=' + encodeURIComponent(lines.join('\n'));
