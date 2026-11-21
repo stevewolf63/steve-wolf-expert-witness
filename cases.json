@@ -400,5 +400,36 @@
     "matter": "Hong v. Hipcamp · Zipline injury · San Francisco, CA",
     "featured": false,
     "categoryVersion": 2
+  },
+  {
+    "role": "plaintiff",
+    "types": [
+      "aquatic",
+      "other"
+    ],
+    "injury": "Wrongful Death",
+    "matter": "Baker v. Camp Mystic · Youth camp flood · Hunt, TX",
+    "featured": false,
+    "categoryVersion": 2
+  },
+  {
+    "role": "plaintiff",
+    "types": [
+      "firearms"
+    ],
+    "injury": "Wrongful Death",
+    "matter": "Estate of Sherman Lee Butler v. Gregory · Use of force by armed court officer · Detroit, MI",
+    "featured": false,
+    "categoryVersion": 2
+  },
+  {
+    "role": "plaintiff",
+    "types": [
+      "on-set"
+    ],
+    "injury": "Retinal Injury",
+    "matter": "Kopelowitz v. Oznium · UV LED lighting in a live production",
+    "featured": false,
+    "categoryVersion": 2
   }
 ]
