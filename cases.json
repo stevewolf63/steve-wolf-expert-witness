@@ -7,7 +7,8 @@
     ],
     "injury": "Murder Trial",
     "matter": "State of Tennessee v. Michael Mullins · Fuel & Fire · Memphis, TN",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "defense",
@@ -16,16 +17,19 @@
     ],
     "injury": "Mass Shooting & Bombing",
     "matter": "Doe v. U.S. Government · Firearms reaction time · Oklahoma City, OK",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
     "types": [
-      "other"
+      "other",
+      "electrocution"
     ],
     "injury": "Electrical Injury",
     "matter": "Higgs v. TSE · High tension systems · Memphis, TN",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -34,7 +38,8 @@
     ],
     "injury": "Cervical Injury",
     "matter": "Atain v. NNG · Ropes course / zip line · New York City, NY",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -44,7 +49,8 @@
     ],
     "injury": "Spinal Injury",
     "matter": "Richards v. Spider-Man on Broadway · Rigging / computerized flight control · NYC",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -54,16 +60,19 @@
     ],
     "injury": "Cervical Injury",
     "matter": "Bazylewicz v. Church Mutual · Ropes course rigging · Cleveland, OH",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
     "types": [
-      "rigging"
+      "rigging",
+      "climbing"
     ],
     "injury": "Spinal Injury",
     "matter": "Lubitsch v. Adirondack Scenic, Six Flags · Theatrical rigging · NYC",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "defense",
@@ -72,7 +81,8 @@
     ],
     "injury": "Brain Injury",
     "matter": "Danny Bell v. Sumo USA · Recreational climbing · Dallas, TX",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -81,7 +91,8 @@
     ],
     "injury": "Spinal Injury",
     "matter": "Deanna Theis v. Climb Max · Recreational climbing · New Orleans, LA",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -90,7 +101,8 @@
     ],
     "injury": "Fatality",
     "matter": "De Rita v. C.A.I.U · Ropes course / climbing · Harrisburg, PA",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -99,7 +111,8 @@
     ],
     "injury": "Fatality",
     "matter": "Ro v. San Juan Mountain Guides, Jeff Lowe · Ice climbing · Ouray, CO",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -108,7 +121,8 @@
     ],
     "injury": "Fatality",
     "matter": "Sarrette v. Just For Fun Rentals · Recreational climbing · Boston, MA",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "defense",
@@ -118,16 +132,19 @@
     ],
     "injury": "Multiple Fractures",
     "matter": "Bailey v. Showman Fabricators & Disney · Theatrical rigging · NYC",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "defense",
     "types": [
-      "rigging"
+      "rigging",
+      "climbing"
     ],
     "injury": "Multiple Injuries",
     "matter": "Rorick v. In Events · Outdoor rigging · Honolulu, HI",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -136,7 +153,8 @@
     ],
     "injury": "Brain Injury",
     "matter": "Veysey v. Rock On Adventure · Indoor climbing / challenge course · Boston, MA",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -145,17 +163,20 @@
     ],
     "injury": "Fracture",
     "matter": "Chen v. Dumbo Bolder · Indoor climbing · NYC",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "defense",
     "types": [
       "firearms",
-      "explosives"
+      "explosives",
+      "on-set"
     ],
     "injury": "Fatality & Serious Injury",
     "matter": "Doe v. USGS Federal Court · Explosives and firearms · Lawrence, KS",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -166,16 +187,19 @@
     ],
     "injury": "Head Injury",
     "matter": "Botuchis v. LD Filmworks · Explosives and firearms",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "defense",
     "types": [
-      "other"
+      "other",
+      "aquatic"
     ],
     "injury": "Drowning",
     "matter": "State v. Terry Smith · Tidal movement · Texas City, TX",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -184,7 +208,8 @@
     ],
     "injury": "Loss of Eye",
     "matter": "Ernst v. Church · Paintball · Sacramento, CA",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -194,7 +219,8 @@
     ],
     "injury": "Shotgun Injuries",
     "matter": "Peters v. City of Wichita · Theatrical use of firearms · Wichita, KS",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "defense",
@@ -203,7 +229,8 @@
     ],
     "injury": "Fracture",
     "matter": "Lecher v. School District of La Crosse · Outdoor rec supervision · La Crosse, WI",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -212,7 +239,8 @@
     ],
     "injury": "Loss of Eye",
     "matter": "DeMayo v. Xtreme Paintball · Salt Lake City, UT",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -221,7 +249,8 @@
     ],
     "injury": "Rollover Accident",
     "matter": "Razo v. No Exit Films · $66.5M On-Set Rollover, one of NM’s largest awards · Santa Fe, NM",
-    "featured": true
+    "featured": true,
+    "categoryVersion": 2
   },
   {
     "role": "prosecution",
@@ -231,7 +260,8 @@
     ],
     "injury": "Fatal Shooting",
     "matter": "State of New Mexico v. Alec Baldwin · Santa Fe, NM",
-    "featured": true
+    "featured": true,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -241,7 +271,8 @@
     ],
     "injury": "Fatal Shooting",
     "matter": "Hutchins v. Alec Baldwin · Los Angeles, CA",
-    "featured": true
+    "featured": true,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -251,16 +282,20 @@
     ],
     "injury": "Fatal Shooting",
     "matter": "Mamie Mitchell v. Alec Baldwin · Santa Fe, NM",
-    "featured": true
+    "featured": true,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
     "types": [
-      "on-set"
+      "on-set",
+      "rigging",
+      "aquatic"
     ],
     "injury": "Head Injury",
     "matter": "Vicens v. Glover aka Steve-O, Mudflap Productions · Stunt safety · Puerto Rico",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -269,7 +304,8 @@
     ],
     "injury": "Wildfire Damage",
     "matter": "Kingstone v. Doe · Real estate value lost to wildfire · Boulder, CO",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -278,16 +314,19 @@
     ],
     "injury": "Loss of Eye",
     "matter": "Tiffany M. Worth v. Academy Sports · Paintball · MS",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
     "types": [
-      "explosives"
+      "explosives",
+      "on-set"
     ],
     "injury": "Serious Bodily Injury",
     "matter": "William Spotts v. 1776 Fest · Explosion · Oklahoma City, OK",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -296,16 +335,19 @@
     ],
     "injury": "Serious Leg Injury",
     "matter": "Monroe v. Camelback · Zip line",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
     "types": [
-      "on-set"
+      "on-set",
+      "rigging"
     ],
     "injury": "Serious Injury",
     "matter": "Johnson v. Rally Studios · Motorcycle Stunt · Seattle, WA",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -315,7 +357,8 @@
     ],
     "injury": "Fatal Shooting",
     "matter": "Svetnoy v. Baldwin · On set homicide · Alec Baldwin · Los Angeles, CA",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
     "role": "plaintiff",
@@ -324,46 +367,47 @@
     ],
     "injury": "Serious Injury",
     "matter": "Bickette v. Ape Index Climbing Gym · Phoenix, AZ",
-    "featured": false
+    "featured": false,
+    "categoryVersion": 2
   },
   {
-    "matter": "Fjugstad fireworks injury matter · Colorado",
+    "role": "plaintiff",
+    "types": [
+      "explosives"
+    ],
     "injury": "Fireworks-related burn injuries",
-    "role": "plaintiff",
-    "types": [
-      "explosives"
-    ],
+    "matter": "Fjugstad fireworks injury matter · Colorado",
     "featured": false,
     "categoryVersion": 2
   },
   {
-    "matter": "Ratto v. City of Boise, Sirjag Pyro, et al. · Boise, ID",
+    "role": "plaintiff",
+    "types": [
+      "explosives"
+    ],
     "injury": "Fireworks-related injury",
-    "role": "plaintiff",
-    "types": [
-      "explosives"
-    ],
+    "matter": "Ratto v. City of Boise, Sirjag Pyro, et al. · Boise, ID",
     "featured": false,
     "categoryVersion": 2
   },
   {
-    "matter": "Hong v. Hipcamp · Zipline injury · San Francisco, CA",
-    "injury": "Broken Back",
     "role": "plaintiff",
     "types": [
       "climbing",
       "rigging"
     ],
+    "injury": "Broken Back",
+    "matter": "Hong v. Hipcamp · Zipline injury · San Francisco, CA",
     "featured": false,
     "categoryVersion": 2
   },
   {
-    "matter": "BNB Wholesale v. Orkid Plaza · Fire investigation · Los Angeles, CA",
-    "injury": "Property Damage",
     "role": "plaintiff",
     "types": [
       "explosives"
     ],
+    "injury": "Property Damage",
+    "matter": "BNB Wholesale v. Orkid Plaza · Fire investigation · Los Angeles, CA",
     "featured": false,
     "categoryVersion": 2
   }
